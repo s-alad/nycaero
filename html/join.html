@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>NYC Aero</title>
+        <link rel="stylesheet" href="../styles.css">   
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="../scripts.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="header">
+            <a class="contact-r" href="../index.html"><button class="contact-r rHome">HOME</button></a>
+            <a class="contact-l" href="../index.html"><button class="contact-l lHome">HOME</button></a>
+            <a class="contact-l" href="join.html"    ><button class="contact-l lBack">BACK</button></a>
+            <div class="header-container">
+                <button> HPR     </button>
+                <button> TARC    </button>
+                <button> CUBESAT </button>
+                <button> INCUBTR </button>
+            </div>
+        </div>
+        <div class="contact">
+            <h1 id="join-text">JOIN US AS A :</h1>
+            <div class="occupation visible">
+                <button onclick="show('student')"> STUDENT </button>
+                <button onclick="show('school')">  SCHOOL  </button>
+                <button onclick="show('team')">    TEAM    </button>
+            </div>
+            <form class="student">
+                <div class="main-detail-container">
+                    <div class="detail-container">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" placeholder="your first name"> 
+                    </div>
+                    <div class="detail-container">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" placeholder="your last name"> 
+                    </div>
+                </div>
+                <div class="main-detail-container">
+                    <div class="detail-container">
+                        <label for="school">SCHOOL NAME</label>
+                        <input type="text" name="school" placeholder="your school name"> 
+                    </div>
+                    <div class="detail-container">
+                        <label for="school-address">SCHOOL ADDRESS</label>
+                        <input type="text" name="school-address" placeholder="your school's address"> 
+                    </div>
+                </div>
+                <div class="basic-container">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email" placeholder="ex: james@jmail.com"> 
+                </div>
+                <div class="student-interests-container">
+                        INTERESTS
+                        <div class="student-checkbox-container">
+                            <div class="checkbox-container">
+                                HPR
+                                <div class="checkbox">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </div>
+                            </div>
+                            <div class="checkbox-container">
+                                TARC
+                                <div class="checkbox">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </div>
+                            </div>
+                            <div class="checkbox-container">
+                                CUBESAT
+                                <div class="checkbox">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </div>
+                            </div>
+                            <div class="checkbox-container">
+                                INCUBTR
+                                <div class="checkbox">
+                                    <input type="checkbox" >
+                                    <span class="checkmark"></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+            <form class="school">
+                <div class="main-detail-container">
+                    <div class="detail-container">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="first-name" placeholder="your first name"> 
+                    </div>
+                    <div class="detail-container">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="last-name" placeholder="your last name"> 
+                    </div>
+                </div>
+                <div class="main-detail-container">
+                    <div class="detail-container">
+                        <label for="school">SCHOOL NAME</label>
+                        <input type="text" name="school" placeholder="your school name"> 
+                    </div>
+                    <div class="detail-container">
+                        <label for="school-address">SCHOOL ADDRESS</label>
+                        <input type="text" name="school-address" placeholder="your school's address"> 
+                    </div>
+                </div>
+                <div class="basic-container">
+                    <label for="email">EMAIL</label>
+                    <input type="text" id="email" name="email" placeholder="ex: james@jmail.com"> 
+                </div>
+                <div class="school-options-container">
+                    <div class="school-options-split">
+                        <div class="school-options-prompt">Does your school have a pre-existing team?</div>
+                        <div class="school-radio-container">
+                            <div class="radio-container">
+                                yes
+                                <div class="radio">
+                                    <input type="radio" name="preteam">
+                                    <span class="radiomark"></span>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                no
+                                <div class="radio">
+                                    <input type="radio" name="preteam" checked="checked">
+                                    <span class="radiomark"></span>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="school-options-split">
+                        <div class=school-options-prompt>Would your school be interested in becoming a NYCA sponsor?</div>
+                        <div class="school-radio-container">
+                            <div class="radio-container">
+                                yes
+                                <div class="radio">
+                                    <input type="radio" name="fund">
+                                    <span class="radiomark"></span>
+                                </div>
+                            </div>
+                            <div class="radio-container">
+                                no
+                                <div class="radio">
+                                    <input type="radio" name="fund" checked="checked">
+                                    <span class="radiomark"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button>SUBMIT</button>
+            </form>
+            <form class="team">
+                <div class="main-detail-container">
+                    <div class="detail-container">
+                        <label for="teamname">TEAM NAME</label>
+                        <input type="text" id="teamname" name="teamname" placeholder="ex: nycaero">  
+                    </div>
+                    <div class="detail-container">
+                        <label for="email">EMAIL</label>
+                        <input type="text" id="email" name="email" placeholder="ex: james@jmail.com"> 
+                    </div>
+                </div>
+                <div class="basic-container">
+                    <label for="location">TEAM LOCATION</label>
+                    <input type="text" id="location" name="location" placeholder="ex: 345 chambers st "> 
+                </div>
+                <div class="team-member-names">
+                    TEAM MEMBER NAMES
+                    <div class="team-member-container">
+                        <div class="member-container"><input class="member-input" type="text" name="mytext[]"></div>
+                    </div>
+                </div>
+                <button class="add-member">
+                    <h1>+</h1>
+                </button>
+                <div class="basic-container"><button>SUBMIT</button></div>
+            </form>
+        </div>
+    </body>
+</html>

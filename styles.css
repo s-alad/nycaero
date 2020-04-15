@@ -1,0 +1,919 @@
+body
+{
+    background-attachment: fixed;
+    margin: 0;
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+html { overflow-y: scroll; }
+* { box-sizing: border-box;}
+
+/* fonts ==========================================================================================*/
+@font-face 
+{
+    font-family: oxygenB; src: url(fonts/Oxygen-Bold.otf);
+}
+@font-face 
+{
+    font-family: oxygenR; src: url(fonts/Oxygen.otf);
+}
+@font-face 
+{
+    font-family: montB; src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face 
+{
+    font-family: montM; src: url(fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face 
+{
+    font-family: montR; src: url(fonts/Montserrat/Montserrat-Regular.ttf);
+}
+@font-face 
+{
+    font-family: robotoR; src: url(fonts/Roboto/Roboto-Regular.ttf);
+}
+
+/* header =======================================================================================*/
+.header
+{
+    position: sticky;
+    top: 0;
+    height: 78px;
+    width: 100%;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0% 16%;
+    
+}
+.header button.contact-r
+{
+    font-family: oxygenB;
+    padding: 0 0 3px 0;
+    margin-top: 18px;
+    margin-right: 30px;
+    border: 0;
+    float: right;
+    background-color: transparent;
+    border-radius: 14px;
+    border: 2px solid white;
+    width: 96px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    transition: ease-in-out .22s;
+    box-shadow: 0px 0px 8px 0px gray;
+}
+.header button.contact-r:hover
+{
+    padding: 0 0 3px 0;
+    margin-top: 18px;
+    margin-right: 30px;
+    border: 0;
+    float: right;
+    background-color: white;
+    border-radius: 14px;
+    border: 2px solid white;
+    color: #042159;
+    width: 96px;
+    height: 40px;
+    cursor: pointer;
+}
+.header button.contact-l
+{
+    font-family: oxygenB;
+    padding: 0 0 3px 0;
+    margin-top: 18px;
+    margin-left: 30px;
+    border: 0;
+    float: left;
+    background-color: transparent;
+    border-radius: 14px;
+    border: 2px solid white;
+    width: 96px;
+    height: 40px;
+    color: white;
+    font-size: 16px;
+    transition: ease-in-out .22s;
+    box-shadow: 0px 0px 8px 0px gray;
+}
+.header button.contact-l:hover
+{
+    padding: 0 0 3px 0;
+    margin-top: 18px;
+    margin-left: 30px;
+    border: 0;
+    float: left;
+    background-color: white;
+    border-radius: 14px;
+    border: 2px solid white;
+    color: #042159;
+    width: 96px;
+    height: 40px;
+    cursor: pointer;
+}
+.header .header-container
+{
+    padding-top: 16px;
+    text-align: center;
+    width: 720px;
+    height: 100%;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+.header .header-container button
+{
+    padding:0;
+    margin: 0 auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: inline-block;
+    width: 18%;
+    height: 38px;
+    border: transparent;
+    border-bottom: 3px solid white;
+    background-color: transparent;
+    font-family: montR;
+    font-size: 26px;
+    color: white;
+    transition: ease-in-out .22s;
+    /* color: #003f64; */
+}
+.header .header-container button:hover
+{
+    margin: 0 auto;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: inline-block;
+    width: 18%;
+    height: 38px;
+    border: transparent;
+    border-bottom: 3px solid #ffd659;
+    background-color: transparent;
+    font-size: 26px;
+    color: #ffd659;
+    cursor: pointer;
+}
+
+/* main ==========================================================================================*/
+.main
+{   
+    padding-top: 54px;
+    text-align: center;
+    margin: 0 auto;
+    height: 370px;
+    width: 100%;
+    /* border: 1px solid white; */
+}
+.main h1
+{
+    font-size: 64px;
+    line-height: 0px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;  
+    text-shadow: 0px 3px 5px gray; 
+}
+.main h2
+{
+    line-height: 20px;
+    font-size: 88px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;
+    text-shadow: 0px 3px 5px gray;
+}
+.main button
+{   
+    padding: 0 0 3px 0;
+    font-family: oxygenB;
+    font-size: 20px;
+    border: 0px transparent;
+    border-radius: 14px;
+    width: 94px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: #ffd659;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    box-shadow: 0px 3px 30px 3px #042159;
+}
+.main button:hover
+{   
+    padding: 0 0 3px 0;
+    font-family: oxygenB;
+    font-size: 20px;
+    border: 0px transparent;
+    border-radius: 14px;
+    width: 94px;
+    height: 44px;
+    margin: 0 auto;
+    background-color: white;
+    color: #ffd659;
+    cursor: pointer;
+}
+
+/* select=========================================================================================*/
+.select
+{
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    text-align: center;
+    width: 650px;
+    padding: 10px 30px 10px 30px;
+    margin-bottom: 40px;
+}
+.select button
+{
+    font-size: 22px;
+    font-family: robotoR;
+    color: white;
+    background-color: transparent;
+    border: 0px transparent;
+}
+.select button:hover
+{
+    font-size: 22px;
+    font-family: robotoR;
+    color: #ffd659;
+    background-color: transparent;
+    border: 0px transparent;
+    cursor: pointer;
+    transition: ease-in-out .22s;
+    /* border-bottom: 2px solid white */
+}
+.select p
+{
+    color: white;
+    font-family: robotoR;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
+/* space =========================================================================================*/
+.space
+{
+    width: 100%;
+    height: initial;
+}
+.space-container
+{   
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    width: 75%;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    margin: auto;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+}
+.space h1
+{
+    font-family: oxygenB;
+    font-size: 30px;
+    line-height: 10px;
+    color: white;
+}
+.space p
+{
+    font-family: oxygenB;
+    font-size: 20px;
+    color: white;
+}
+/* partners =======================================================================================*/
+.partners-container
+{
+    margin-top: 30px;
+    width: 100%;
+    height: initial;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.partners-container a
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+.partners-section
+{
+    border: 4px solid white;
+    border-radius: 14px;
+    width: 270px;
+    height: initial;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 12px;
+    /* border: 1px solid yellow; */
+}
+.partners-section-title
+{
+    /* border: 1px solid red; */
+    margin-top: 10px;
+    width: 100%;
+    font-family: oxygenB;
+    font-size: 20px;
+    color: white;
+}
+.partners-section-logo-container
+{
+    width: 100%;
+    height: 100px;
+    /* border: 1px solid purple; */
+}
+.partners-section-logo
+{
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-top: 16px;
+    border-radius: 50%;
+}
+.partners-section-discription
+{
+    padding-left: 14px;
+    padding-right: 14px;
+    height: initial;
+    /* border: 1px solid pink; */
+}
+.partners-section-discription p
+{
+    font-size: 16px;
+}
+.partners-section-link
+{
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    margin-bottom: 12px;
+}
+.partners-section-link a
+{
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+.partners-section-link a:hover
+{
+    transition: ease-in-out .2s;
+    color: #ffd659;
+}
+
+/* projects =======================================================================================*/
+.projects-link
+{
+    text-decoration: none;
+    cursor: pointer;
+}
+.projects-container
+{
+    /* border: 1px solid red; */
+    width: 80%;
+    margin: auto;
+    margin-bottom: 32px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.projects-container-title
+{
+    margin: auto;
+    margin-bottom: 14px;
+    width: 94%;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    text-align: center;
+}
+.projects-item-container
+{
+    /* border: 1px solid yellow; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.projects-item
+{
+    width: 30%;
+    height: 270px;
+    margin: 0 10px 20px 10px;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}
+.projects-item-title
+{
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray;
+    margin-bottom: 8px;
+}
+.projects-item-image-container
+{
+    overflow: hidden;
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+    margin: auto;
+    width: 100%;
+    height: 57%;
+    border: 1px solid white;
+}
+.projects-item-image
+{
+    height: 100%;
+    width: 100%;
+}
+.projects-item-discription
+{
+    width: 100%;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+.projects-item-link
+{
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray;
+}
+.projects-item-link a
+{
+    cursor: pointer;
+    transition: ease-in-out .2s;
+}
+.projects-item-link a:hover
+{
+    transition: ease-in-out .2s;
+    color: #ffd659;
+}
+
+/* contact ========================================================================================*/
+.contact
+{
+    padding-top: 54px;
+    text-align: center;
+    width: 100%;
+}
+.contact-container
+{
+    /* border: 1px solid yellow; */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray; 
+    width: 520px;
+    height: 350px;
+    text-align: center;
+    margin: auto;
+}
+.contact-container.sponsor-container
+{
+    height: 110px;
+}
+.contact h1
+{
+    font-size: 34px;
+    line-height: 0px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;  
+    text-shadow: 0px 3px 5px gray; 
+    margin-bottom: 40px;
+}
+.contact p
+{
+    margin: auto;
+    width: 60%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;  
+    text-shadow: 0px 3px 5px gray; 
+    margin-bottom: 40px;
+}
+.contact .detail-container
+{
+    height: initial;
+    float: left;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.contact .message-spliter
+{
+    width: 100%;
+}
+.contact .message-container
+{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.contact input[type=text]
+{
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    margin: auto;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    width: 80%;
+}
+.contact textarea
+{
+    resize: none;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+    width: 90%;
+    height: 200px;
+}
+.contact button
+{
+    padding: 0 0 3px 0;
+    font-family: oxygenB;
+    font-size: 20px;
+    border: 0px transparent;
+    border-radius: 14px;
+    width: 94px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-color: #ffd659;
+    color: white;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+    box-shadow: 0px 3px 30px 3px #042159;
+}
+.contact button:hover
+{   
+    padding: 0 0 3px 0;
+    font-family: oxygenB;
+    font-size: 20px;
+    border: 0px transparent;
+    border-radius: 14px;
+    width: 94px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 28px;
+    background-color: white;
+    color: #ffd659;
+    cursor: pointer;
+}
+.main-detail-container
+{
+    height: 80px;
+    /* border: 1px solid red; */
+}
+.basic-container
+{
+    margin: auto;
+    height: 100px;
+    width: 300px;
+}
+
+/* join ==========================================================================================*/
+.lBack {display: none; }
+.rHome {display: none; }
+.lHome {display: block;}
+.contact .occupation button
+{
+    margin-left: 12px;
+    margin-right: 12px;
+    width: 120px;
+}
+.occupation 
+{
+    display: block;
+}
+.student
+{
+    display: none;
+    /* border: 1px solid yellow; */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray; 
+    width: 520px;
+    height: initial;
+    text-align: center;
+    margin: auto;
+}
+.student-interests-container
+{
+    margin-bottom: 12px;
+    padding-top: 18px;
+    height: 120px;
+}
+.student-checkbox-container
+{
+    margin: auto;
+    margin-top: 10px;
+    height: initial;
+    width: 90%;
+    height: 75px;
+}
+.school
+{
+    display: none;
+    /* border: 1px solid yellow; */
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray; 
+    width: 520px;
+    height: initial;
+    text-align: center;
+    margin: auto;
+}
+.school-options-container
+{
+    /* border: 1px solid pink; */
+    margin-bottom: 8px;
+    padding-top: 18px;
+    height: 130px;
+}
+.school-options-split
+{
+    /* border: 1px solid purple; */
+    font-size: 16px;
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.school-options-prompt
+{
+    margin: auto;
+    font-size: 14.5px;
+    width: 80%;
+    height: 50px;
+}
+.school-radio-container
+{
+    width: 60%;
+    margin: auto;
+    height: initial;
+}
+.team
+{
+    display: none;
+    border: 1px solid yellow;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+    text-shadow: 0px 3px 5px gray; 
+    width: 520px;
+    height: initial;
+    text-align: center;
+    margin: auto;
+}
+button.add-member 
+{
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    width: 30px;
+    height: 30px;
+    border-radius: 42%;
+}
+button.add-member:hover
+{
+    padding: 0;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 42%;
+}
+button.add-member h1
+{
+    position: relative;
+    top: -2px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    transition: ease-in-out .3s;
+}
+button.add-member:hover h1:hover
+{
+    position: relative;
+    top: -2px;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #ffd659;
+    transition: ease-in-out .3s;
+}
+.delete-member
+{
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    top: 13px;
+    right: 30px;
+    z-index: 99;
+}
+.team-member-container
+{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.member-container
+{
+    text-align: center;
+    position: relative;
+    margin-bottom: 8px;
+    height: 50px;
+    width: 30%;
+}
+
+/* checkbox bullshit code  ======================================================================*/
+.checkbox-container
+{
+    float: left;
+    width: 25%;
+    height: 75px;
+}
+.checkbox
+{
+    margin: auto;
+    margin-top: 8px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid yellow;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    border: 4px solid white;
+    border-radius: 6px;
+    box-shadow: 0px 4px 10px 0px grey;
+}
+.checkbox input
+{
+    position: absolute;
+    top: -1px;
+    left: -2px;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2); 
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+.checkmark 
+{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.checkmark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.checkbox input:checked ~ .checkmark:after
+{
+    display: block;
+}
+.checkbox .checkmark:after 
+{
+    left: 4.8px;
+    top: 0px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* radiobutton bullshit code  ======================================================================*/
+.radio-container
+{
+    /* border: 1px solid red; */
+    float: left;
+    width: 50%;
+    height: 60px;
+}
+.radio
+{
+    margin: auto;
+    margin-top: 8px;
+    width: 25px;
+    height: 25px;
+    border: 1px solid yellow;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    background-color: rgba(0, 0, 0, .55);
+    border: 4px solid white;
+    border-radius: 40%;
+    box-shadow: 0px 4px 10px 0px grey;
+}
+.radio input
+{
+    position: absolute;
+    left: -3.5px;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+    opacity: 0;
+    -ms-transform: scale(2);
+    -moz-transform: scale(2);
+    -webkit-transform: scale(2); 
+    -o-transform: scale(2);
+    transform: scale(2);
+}
+.radiomark 
+{
+    height: 100%;
+    width: 100%;
+    background-color: transparent;
+}
+.radiomark:after 
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+.radio input:checked ~ .radiomark:after
+{
+    display: block;
+}
+.radio .radiomark:after 
+{
+    left: 5px;
+    top: 4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* footer  ======================================================================*/
+footer
+{
+    height: 130px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .55);
+    border-top: 6px solid white;
+    border-radius: 50% 50% 0 0;
+    box-shadow: 0px 4px 10px 0px grey;
+    margin: auto;
+    text-align: center;
+    padding: 10px 30px 10px 30px;
+}
