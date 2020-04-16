@@ -46,3 +46,16 @@ function show(name)
     document.getElementsByClassName("lHome")[0].style.display = 'none'
     document.getElementsByClassName("lBack")[0].style.display = 'block'
 };
+
+//header stuf
+function openMenu()
+{
+    document.getElementsByClassName("mobile-header")[0].style.display = 'none';
+    document.getElementsByClassName("mobile-header-option-container")[0].style.display = 'block';
+    
+}
+function closeMenu()
+{
+    document.getElementsByClassName("mobile-header")[0].style.display = 'block';
+    document.getElementsByClassName("mobile-header-option-container")[0].style.display = 'none';
+}

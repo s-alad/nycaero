@@ -53,9 +53,11 @@ html { overflow-y: scroll; }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 0%;
+    transition: ease-in-out 1s;
 }
 .mobile-header-open-icon
 {
+    cursor: pointer;
     padding-top: 20px;
     width: 55px;
     height: initial;
@@ -89,6 +91,7 @@ html { overflow-y: scroll; }
 }
 .mobile-header-close-icon
 {
+    cursor: pointer;
     color: white;
     line-height: 100px;
     text-align: center;
@@ -97,6 +100,7 @@ html { overflow-y: scroll; }
 }
 .mobile-header-option-container
 {
+    transition: ease-in-out 1s;
     width: 100%;
     background-color: rgba(0, 0, 0, .55);
     border-bottom: 6px solid white;
@@ -211,7 +215,7 @@ html { overflow-y: scroll; }
     width: 720px;
     height: 100%;
     margin: 0 auto;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 .header .header-container button
 {
