@@ -8,17 +8,45 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="mobile-header">
+            <div class="mobile-header-open-icon">
+                <div class="mobile-icon-component-1"></div>
+                <div class="mobile-icon-component-2"></div>
+                <div class="mobile-icon-component-3"></div>  
+            </div>
+        </div>
+        <div class="mobile-header-option-container">
+            <div class="mobile-header-close-icon"><b>&#xd7;</b></div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> CONTACT </a>
+            </div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> HPR </a>
+            </div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> TARC </a>
+            </div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> CUBESAT </a>
+            </div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> INCUBATOR</a>
+            </div>
+            <div class="mobile-header-option">
+                <a href="html/hpr.html"> SPONSER </a>
+            </div>
+        </div>
         <div class="header">
             <a href="html/contact.html"><button class="contact-r">CONTACT</button></a>
             <a href="html/sponser.html"><button class="contact-l">SPONSOR</button></a>
             <div class="header-container">
-                <button> HPR     </button>
-                <button> TARC    </button>
-                <button> CUBESAT </button>
-                <button> INCUBTR  </button>
+                <a href="html/hpr.html">       <button> HPR     </button></a>
+                <a href="html/tarc.html">      <button> TARC    </button></a>
+                <a href="html/cubesat.html">   <button> CUBESAT </button></a>
+                <a href="html/incubator.html"> <button> INCUBTR </button></a>
             </div>
         </div>
-        <div class="main">
+        <div class="main" id="main">
             <h1>
                 NYC 
             </h1>
@@ -28,10 +56,10 @@
             <a href="html/join.html"><button>JOIN</button></a>
         </div>
         <div class="select">
-            <a href="#about">    <button>-ABOUT US-</button></a>
-            <a href="#team">     <button>-OUR TEAM-</button></a>
-            <a href="#partners"> <button>-PARTNERS-</button></a>
-            <a href="#projects"> <button>-PROJECTS-</button></a>
+            <a href="#about">    <button><b>-ABOUT US-</b></button></a>
+            <a href="#team">     <button><b>-OUR TEAM-</b></button></a>
+            <a href="#partners"> <button><b>-PARTNERS-</b></button></a>
+            <a href="#projects"> <button><b>-PROJECTS-</b></button></a>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                 sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
@@ -61,9 +89,44 @@
         <div class="space">
             <div class="space-container" id="team">
                 <h1>OUR TEAM</h1>
-                <p>
-
-                </p>
+                <div class="team-container">
+                    <div class="team-item">
+                        <div class="team-item-image-container">
+                            <img src="images/person-placeholder.jpg" class="team-item-image">
+                            <div class="team-item-name">NAME</div>
+                            <div class="team-item-quote">
+                                <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-item-image-container">
+                            <img src="images/person-placeholder.jpg" class="team-item-image">
+                            <div class="team-item-name">NAME</div>
+                            <div class="team-item-quote">
+                                <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-item-image-container">
+                            <img src="images/person-placeholder.jpg" class="team-item-image">
+                            <div class="team-item-name">NAME</div>
+                            <div class="team-item-quote">
+                                <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="team-item">
+                        <div class="team-item-image-container">
+                            <img src="images/person-placeholder.jpg" class="team-item-image">
+                            <div class="team-item-name">NAME</div>
+                            <div class="team-item-quote">
+                                <i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</i>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
             </div>
         </div>
         <div class="space">
@@ -125,7 +188,7 @@
             <div class="projects-container" id="projects">
                 <div class="projects-container-title"><h1>PROJECTS</h1></div>
                 <div class="projects-item-container">
-                    <a href="" class="projects-link">
+                    <a href="html/tarc.html" class="projects-link">
                         <div class="projects-item">
                             <div class="projects-item-title">TARC</div>
                             <div class="projects-item-image-container">
@@ -137,7 +200,7 @@
                     </a>
                     <a href="" class="projects-link">
                         <div class="projects-item">
-                            <a href="" class="projects-link">
+                            <a href="html/hpr.html" class="projects-link">
                             <div class="projects-item-title">HIGH-POWER-ROCKETRY</div>
                             <div class="projects-item-image-container">
                                 <img src="images/hpr.jpg" class="projects-item-image">
@@ -146,7 +209,7 @@
                             <div class="projects-item-link"><a>-LEARN MORE-</a></div>
                         </div>
                     </a>
-                    <a href="" class="projects-link">
+                    <a href="html/cubesat.html" class="projects-link">
                         <div class="projects-item">
                             <div class="projects-item-title">CubeSAT</div>
                             <div class="projects-item-image-container">
@@ -156,7 +219,7 @@
                             <div class="projects-item-link"><a>-LEARN MORE-</a></div>
                         </div>
                     </a>
-                    <a href="" class="projects-link">
+                    <a href="html/iavs.html" class="projects-link">
                         <div class="projects-item">
                             <div class="projects-item-title">IAVS</div>
                             <div class="projects-item-image-container">
@@ -166,7 +229,7 @@
                             <div class="projects-item-link"><a>-LEARN MORE-</a></div>
                         </div>
                     </a>
-                    <a href="" class="projects-link">
+                    <a href="html/incubator.html" class="projects-link">
                         <div class="projects-item">
                             <div class="projects-item-title">INCUBATOR</div>
                             <div class="projects-item-image-container">
@@ -180,7 +243,13 @@
             </div>
         </div>
         <footer>
-            
+            <a href="#main">
+                <div class="footer-to-top">
+                    <div class="footer-to-top-icon"></div>
+                    <div class="footer-to-top-text">TOP</div>
+                </div>
+            </a>
+            <div class="footer-copyright">© nycaerospace.org, All rights reserved.</div>
         </footer>
     </body>
 </html>
