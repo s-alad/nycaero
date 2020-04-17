@@ -51,11 +51,17 @@ function show(name)
 function openMenu()
 {
     document.getElementsByClassName("mobile-header")[0].style.display = 'none';
+    document.getElementsByClassName("mobile-header-option-container")[0].classList.add('open-header');
     document.getElementsByClassName("mobile-header-option-container")[0].style.display = 'block';
     
 }
-function closeMenu()
+function endOpenMenu()
 {
+    document.getElementsByClassName("mobile-header-option-container")[0].classList.remove('open-header');
+    window.alert("anim done");
+}
+function closeMenu()
+{ 
     document.getElementsByClassName("mobile-header")[0].style.display = 'block';
     document.getElementsByClassName("mobile-header-option-container")[0].style.display = 'none';
 }

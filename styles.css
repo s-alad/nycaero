@@ -40,7 +40,22 @@ html { overflow-y: scroll; }
 {
     font-family: robotoB; src: url(fonts/Roboto/Roboto-Bold.ttf);
 }
+@keyframes open-header 
+{
+    0% {top: -400px;}
+    100% {top: 0px;}
+}
+@keyframes close-header
+{
+    0% {top: 0px;}
+    100% {top: -400px;}
+}
+@keyframes fade-out
+{
 
+}
+.open-header  {animation: open-header .5s;}
+.close-header {animation: close-header .5s;}
 /* header =======================================================================================*/
 .mobile-header
 {
@@ -53,7 +68,6 @@ html { overflow-y: scroll; }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0% 0%;
-    transition: ease-in-out 1s;
 }
 .mobile-header-open-icon
 {
@@ -100,8 +114,9 @@ html { overflow-y: scroll; }
 }
 .mobile-header-option-container
 {
-    transition: ease-in-out 1s;
+    position: relative;
     width: 100%;
+    height: 330px;
     background-color: rgba(0, 0, 0, .55);
     border-bottom: 6px solid white;
     border-radius: 0 0 20% 20%;
@@ -742,7 +757,7 @@ html { overflow-y: scroll; }
 .main-detail-container
 {
     height: 80px;
-    /* border: 1px solid red; */
+    border: 1px solid red;
 }
 .basic-container
 {
@@ -810,7 +825,7 @@ html { overflow-y: scroll; }
 .school-options-container
 {
     /* border: 1px solid pink; */
-    margin-bottom: 8px;
+    margin-bottom: 12px;
     padding-top: 18px;
     height: 130px;
 }
@@ -907,6 +922,10 @@ button.add-member:hover h1:hover
     margin-bottom: 8px;
     height: 50px;
     width: 30%;
+}
+.label-container
+{
+    width: 100%;
 }
 
 /* checkbox bullshit code  ======================================================================*/
@@ -1131,7 +1150,7 @@ footer a
         width: 600px;
     }
 }
-@media only screen and (max-width: 825px)
+@media only screen and (max-width: 830px)
 {
     .select
     {
@@ -1144,10 +1163,6 @@ footer a
     .select p
     {
         font-size: 15px;
-    }
-    .header .header-container
-    {
-        width: 460px;
     }
     .header .header-container button, .header .header-container button:hover
     {
@@ -1172,6 +1187,10 @@ footer a
         width: 76px;
         height: 32px;
         font-size: 14px;
+    }
+    .header .header-container
+    {
+        width: 460px;
     }
 }
 @media only screen and (max-width: 690px)
@@ -1207,6 +1226,56 @@ footer a
 }
 @media only screen and (max-width: 620px)
 {
+    
+    .contact input[type=text]
+    {
+        width: 220px;
+        margin: auto;
+        margin-bottom: 14px;
+    }
+    .member-container
+    {
+        width: 40%;
+    }
+    .member-container input[type=text]
+    {
+        width: 90%;
+    }
+    .school-options-container
+    {
+        height: 160px;
+    }
+    .school-options-prompt
+    {
+        margin-bottom: 32px;
+    }
+    .checkbox-container
+    {
+        font-size: 14px;
+    }
+    .team 
+    {
+        width: 100%;
+    }
+    .student
+    {
+        width: 100%;
+    }
+    .school
+    {
+        width: 100%;
+    }
+    .contact .detail-container
+    {
+        width: 100%;
+        float: initial;
+    }
+    .main-detail-container 
+    {
+        height: 180px;
+        width: 90%;
+        margin: auto;
+    }
     .header {display: none;}
     .mobile-header {display: block;}
     .main h1
