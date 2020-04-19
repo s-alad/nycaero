@@ -156,7 +156,7 @@ html { overflow-y: scroll; }
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0% -5%;
+    background-position: 0% 50%;
     
 }
 .header button.contact-r
@@ -634,6 +634,67 @@ html { overflow-y: scroll; }
     color: #ffd659;
 }
 
+/* content ========================================================================================*/
+.content
+{
+    padding-top: 44px;
+    text-align: center;
+    width: 100%;
+}
+.content h1
+{
+    font-size: 34px;
+    line-height: 0px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;  
+    text-shadow: 0px 3px 5px gray; 
+    margin-bottom: 40px;
+}
+.content-container
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+.content-item
+{
+    width: 100%;
+    height: initial;
+    margin: 0 10px 20px 10px;
+    background-color: rgba(0, 0, 0, .55);
+    border: 6px solid white;
+    border-radius: 14px;
+    box-shadow: 0px 4px 10px 0px grey;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+}
+.content-item-header
+{
+    height: 32px;
+    padding-top: 10px;
+    width: 100%;
+    font-size: 20px;
+    line-height: 0px;
+    color: white;
+    text-align: center;
+    font-family: oxygenB;  
+}
+.content-item-discription
+{
+    height: initial;
+    width: 100%;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    font-family: robotoR;  
+}
+.content-item-discription p
+{
+    margin: 0;
+}
 /* contact ========================================================================================*/
 .contact
 {
@@ -1370,7 +1431,6 @@ footer a
         font-size: 12px;
     }
 }
-
 @media only screen and (max-width: 375px) 
 {
     .select
