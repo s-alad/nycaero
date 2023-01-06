@@ -400,6 +400,17 @@ html { overflow-y: scroll; }
     color: white;
 }
 
+/* map ==========================================================================================*/
+.map-container {
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+.map-container img {
+    width: 100%;
+    height: initial;
+    border-radius: 7px;
+}
+
 /* team =========================================================================================*/
 .team-container
 {
