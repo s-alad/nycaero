@@ -333,7 +333,7 @@ html { overflow-y: scroll; }
     border-radius: 14px;
     box-shadow: 0px 4px 10px 0px grey;
     margin: auto;
-    background-color: rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .75);
     border: 6px solid white;
     text-align: center;
     width: 650px;
@@ -376,7 +376,7 @@ html { overflow-y: scroll; }
 }
 .space-container
 {   
-    background-color: rgba(0, 0, 0, .55);
+    background-color: rgba(0, 0, 0, .75);
     border: 6px solid white;
     width: 75%;
     border-radius: 14px;
@@ -425,20 +425,34 @@ html { overflow-y: scroll; }
 .team-item
 {
     /* border: 1px solid yellow; */
-    width: 200px;
+    /* width: 200px; */
+    width: 100%;
     height: initial;
     margin-left: 12px;
     margin-right: 12px;
 }
 .team-item-image-container
 {
+    display: flex;
     width: 100%;
     height: initial;
-    margin-top: 12px;
+    flex-direction: column;
+    /* margin-top: 12px; */
     /* border: 1px solid purple; */
+}
+.team-item-image-container span {
+    text-align: start;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: oxygenR;
+    font-style: italic;
+    position: relative;
+    top: -4px;
 }
 .team-item-image
 {
+    display: none;
     border-radius: 14px;
     width: 90px;
     height: 90px;
@@ -452,14 +466,32 @@ html { overflow-y: scroll; }
     color: white;
     font-size: 18px;
     font-family: oxygenR;
+    /* width: 100px; */
+    text-align: start;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.team-item-name span {
+    padding-left: 15px;
+    position: relative;
+    flex: 1;
+    text-align: start;
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: none;
 }
 .team-item-quote
 {
-    padding: 8px 8px 8px 8px;
-    height: 100px;
+    flex: 1;
+    padding: 2px 8px 8px 0px;
+    /* height: 100px; */
     color: white;
     font-size: 14px;
     font-family: montR;
+    text-align: start;
 }
 
 /* partners =======================================================================================*/
@@ -475,13 +507,13 @@ html { overflow-y: scroll; }
 .partners-container a
 {
     text-decoration: none;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 .partners-section
 {
     border: 4px solid white;
     border-radius: 14px;
-    width: 270px;
+    width: 48%;
     height: initial;
     margin-left: 8px;
     margin-right: 8px;
@@ -510,9 +542,11 @@ html { overflow-y: scroll; }
     margin: auto;
     margin-top: 16px;
     border-radius: 50%;
+    background-color: white;
 }
 .partners-section-discription
 {
+    flex: 1;
     padding-left: 14px;
     padding-right: 14px;
     height: initial;
@@ -535,6 +569,12 @@ html { overflow-y: scroll; }
 {
     cursor: pointer;
     transition: ease-in-out .2s;
+    text-decoration: none;
+    color: white;
+}
+.partners-section-link a:active {
+    text-decoration: none;
+    color: white;
 }
 .partners-section-link a:hover
 {
@@ -705,6 +745,14 @@ html { overflow-y: scroll; }
 .content-item-discription p
 {
     margin: 0;
+}
+.content-item-files {width: 100%; display: flex; flex-direction: row; justify-content: center;}
+.content-item-file {
+    width: 48%;
+}
+.content-item-file iframe {
+    width: 100%;
+    height: 700px;
 }
 /* contact ========================================================================================*/
 .contact
